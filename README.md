@@ -1,3 +1,9 @@
+# My JavaScript Course Material
+
+This repo contains the files that I am using for my Udemy JavaScript course. Note that the only files I will be manipulating are the files in the 'starter' folder of each section. These will show my progress in this course as well as samples of my code in JavaScript. Below contains the original information for this ReadMe from my Udemy course professor.
+
+________________________________________________________________________________________________________________________
+
 # Course Material and FAQ for my Complete JavaScript Course
 
 This repo contains starter files and the finished project files for all the projects contained in the course.
