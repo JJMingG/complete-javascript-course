@@ -2,7 +2,7 @@
  *  Created by Jamine Guo   *
  *  09/04/2018              *
  ****************************
-    Coding Challenge 1
+    Coding Challenge 2
  ****************************/
 
  /*

@@ -134,7 +134,7 @@ console.log(drink);
 // Switch Statement
 job = 'student';
 switch (job) {
-    case 'student':
+    case 'teacher':
         console.log(firstName + ' teaches kids.');
         break;
     case 'driver':
@@ -171,3 +171,83 @@ if (num == '23') {
 /***************
     Functions
  ***************/
+
+//function declaration
+// format: function nameOfFunc(argument1, argument 2, etc) {}
+function calculateAge(birthYear) {
+     return 2018 - birthYear
+}
+
+var ageLilian = calculateAge(2003);
+console.log('Lilian is ' + ageLilian + ' years old!');
+
+
+/*******************************************
+    Function Statements and Expressions
+ *******************************************/
+
+// Function expression
+var whatDoYouDo = function(job, firstName) {
+    switch(job) {
+        case 'teacher':
+            return firstName + ' teaches kids how to code';
+        case 'driver':
+            return firstName + ' drives people around';
+        case 'student':
+            return firstName + ' is studying in college';
+        default:
+            return firstName + ' is not doing anything';
+    }
+}
+
+console.log(whatDoYouDo('student', 'Jamine'));
+
+
+/***************
+    Arrays
+ ***************/
+
+// Ways to declare arrays
+var names = ['Jamine', 'Lilian', 'Eric'];
+var years = new Array(1997, 2003, 1998);
+
+// This prints the whole array preceded by the size
+console.log(names); // (3) ["Jamine", "Lilian", "Eric"]
+console.log(names.length); // to access the "3"
+console.log(names[1]); // Access the second element of the array
+
+// Mutate Array Data
+names[0] = 'Jay'; // Replaces the first element of the array
+console.log(names);
+names[names.length] = 'Kim'; // Replace names[3] even tho it is
+                             // outside of the original length
+console.log(names);
+
+// Arrays may have different data types;
+var arr = ['John', 123, true, 'boop'];
+console.log(arr);
+
+// Array Methods
+// Adding to Array
+arr.push('pushed'); // Adds element to the end of array
+arr.unshift('Beginning'); // Adds element to the beginning of array
+console.log(arr);
+
+// Deleting from Array
+arr.pop(); // deletes element at end of array
+arr.shift(); // deletes element at beginning of array
+console.log(arr);
+
+// Indexing of Array
+console.log(arr.indexOf(123)); // returns the position of element
+                               // returns -1 if element not in array
+
+
+/*** Coding Challenge 3 ***/
+
+
+/*******************************
+    Objects and Properties
+ *******************************/
+
+//
