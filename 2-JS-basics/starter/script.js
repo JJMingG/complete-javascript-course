@@ -157,7 +157,8 @@ switch (job) {
 
 // Equality Operators
 // === is for strict equality comparisons
-// -- does type coercions so the data type of 2 variables do not have to match
+// == does type coercions so the data type of 2 variables do not have to match
+// The same applies to != and !==
 var num = 23;
 if (num == '23') {
     console.log('The == operator does type coercion');
@@ -250,4 +251,94 @@ console.log(arr.indexOf(123)); // returns the position of element
     Objects and Properties
  *******************************/
 
-//
+// Objects define key value pairs called a key
+// Similar to arrays but order is not important
+var obj = { // different braces
+    fName: 'John', // separate with a comma
+    lName: 'Smith',
+    bYear: 1990,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'], // Can put another array or even an object
+    nJob: 'teacher',
+    married: true
+};
+
+console.log(obj.fName); // Access values by using dot operators
+console.log(obj['lName']); // Or access by typing key in []
+var u = 'bYear';
+console.log(obj[u]); // Note like above, key has to be a string passed in
+
+obj.married = false; // Can mutate Values
+
+// Another way to declare object and its attributes
+var jane = new Object();
+jane.first = 'Jane';
+jane['last'] = 'Smith';
+console.log(jane); // This will display all attributes of the object
+
+
+/***************************
+    Objects and Methods
+ ***************************/
+
+var obj2 = { // different braces
+    fName: 'Mary', // separate with a comma
+    lName: 'Smith',
+    bYear: 1993,
+    nJob: 'driver',
+    married: false,
+    calcAge: function(bYear) { // Object Method = function expression in object
+        return 2018 - bYear;
+    }
+};
+
+console.log(obj2.calcAge(1990)); // How to call/use object method
+
+var obj3 = { // different braces
+    fName: 'Joe', // separate with a comma
+    lName: 'Smith',
+    bYear: 1989,
+    nJob: 'waiter',
+    married: false,
+    calcAge: function() {
+        return 2018 - this.bYear; // How to use an attribute in "this" object
+        // this.age = 2018 - this.bYear // adds attribute to object instead
+                                        // of returning, just need to call func later
+    }
+};
+
+console.log(obj3.calcAge()); // Can now use method without inputing an argument
+
+
+/*** Coding Challenge 4 ***/
+
+
+/***************************
+    Loops and Iteration
+ ***************************/
+
+// For Loop
+for (var i = 0; i < 10; i++) {
+    console.log(i);
+}
+
+// While Loop
+var i = 0;
+while (i < 10) {
+    console.log(i);
+    i++;
+}
+
+// Continue and Break Statements
+// Continue, follows through with the loop while break will leave the loop
+for (var i = 0; i < arr.length; i++) {
+    if (typeof arr[i] !== 'string') continue; // Prints out only string types
+    console.log(arr[i]);
+}
+
+for (var i = 0; i < arr.length; i++) {
+    if (typeof arr[i] !== 'string') break; // Prints until a non-string element
+    console.log(arr[i]);
+}
+
+
+/*** Coding Challenge 5 ***/
