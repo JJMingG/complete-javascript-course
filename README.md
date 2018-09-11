@@ -8,8 +8,8 @@ Also note that I am not simply copying the instructor's videos. Code written thr
 
 ### Resource Links:
 
-Class Page: https://www.udemy.com/the-complete-javascript-course/
-Original Starter Project: https://github.com/jonasschmedtmann/complete-javascript-course
+Class Page: https://www.udemy.com/the-complete-javascript-course/  
+Original Starter Project: https://github.com/jonasschmedtmann/complete-javascript-course  
 Teacher's General Resources: http://codingheroes.io/resources/
 
 ### Thoughts:
@@ -20,7 +20,9 @@ I originally wanted to learn JavaScript because I thought it would be a good ide
 
 Section 2 of this course was just learning the basics of JavaScript. I'll be honest, I am one of the people that thought JavaScript would be like Java. I was pretty shocked to learn that JavaScript is very much like C++ and Python. Because of that, I've been able to grasp the lessons relatively easily since I knew most of the concepts. That doesn't take away from the fact that I am learning new things throughout the lessons. So far, I have learned a lot in this course and it has been pretty intriguing to me. I can't wait to learn more and start some big projects!
 
+###### After finishing section 3:
 
+Some of the information in this section were very similar to other languages I've learned. Scoping seemed pretty much exactly like C++. Hoisting however, was a new concept to me. 'this' was pretty much the same except some minute differences. 
 
 
 
