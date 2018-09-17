@@ -11,6 +11,7 @@ Also note that I am not simply copying the instructor's videos. Code written thr
 Class Page: https://www.udemy.com/the-complete-javascript-course/  
 Original Starter Project: https://github.com/jonasschmedtmann/complete-javascript-course  
 Teacher's General Resources: http://codingheroes.io/resources/
+Events Reference Page: https://developer.mozilla.org/en-US/docs/Web/Events
 
 ### Thoughts:
 
@@ -22,7 +23,7 @@ Section 2 of this course was just learning the basics of JavaScript. I'll be hon
 
 ###### After finishing section 3:
 
-Some of the information in this section were very similar to other languages I've learned. Scoping seemed pretty much exactly like C++. Hoisting however, was a new concept to me. 'this' was pretty much the same except some minute differences. 
+Some of the information in this section were very similar to other languages I've learned. Scoping seemed pretty much exactly like C++. Hoisting however, was a new concept to me. 'this' was pretty much the same except some minute differences.
 
 
 
