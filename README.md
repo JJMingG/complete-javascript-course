@@ -19,12 +19,16 @@ I originally wanted to learn JavaScript because I thought it would be a good ide
 
 ###### After finishing section 2:
 
-Section 2 of this course was just learning the basics of JavaScript. I'll be honest, I am one of the people that thought JavaScript would be like Java. I was pretty shocked to learn that JavaScript is very much like C++ and Python. Because of that, I've been able to grasp the lessons relatively easily since I knew most of the concepts. That doesn't take away from the fact that I am learning new things throughout the lessons. So far, I have learned a lot in this course and it has been pretty intriguing to me. I can't wait to learn more and start some big projects!
+Section 2 of this course was just learning the basics of JavaScript. I'll be honest, I am one of the people that thought JavaScript would be like Java. I was pretty shocked to learn that JavaScript is very much like C++ and Python. Because of that, I've been able to grasp the lessons relatively easily since I knew most of the concepts. That doesn't take away from the fact that I am learning new things throughout the lessons. So far, I have learned a lot in this course and it has been pretty intriguing to me. I can't wait to learn more and start some big projects!  
 
 ###### After finishing section 3:
 
-Some of the information in this section were very similar to other languages I've learned. Scoping seemed pretty much exactly like C++. Hoisting however, was a new concept to me. 'this' was pretty much the same except some minute differences.
+Some of the information in this section were very similar to other languages I've learned. Scoping seemed pretty much exactly like C++. Hoisting however, was a new concept to me. 'this' was pretty much the same except some minute differences.  
 
+###### After finishing section 4:
+
+I liked that we were given a decent sized project as our first project and I also liked that the teacher walked us through the work since it was our first big project and taught us many things like events and event listeners while doing the project. I enjoyed it and it was a nice simple project that taught me how to integrate something on the web in a real world situation, which I find lacking in some of my non-online courses. My only complaint was that for the challenge 2 and 3, the teacher assumed that we knew how to manipulate the HTML and CSS code. I didn't have much trouble aside from that.  
+  
 
 
 Below contains the original information for this ReadMe from my Udemy course professor.

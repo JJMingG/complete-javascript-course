@@ -88,45 +88,45 @@
        need CSS to position the second dice, so take a look at the CSS code for the first one)
 
     My Assumptions:
-    - For number 3, I am assuming that rolling a SINGLE one ONLY will result in 0 current score.
-    - This will apply to six from challenge 1 as well, in which a SINGLE six ONLY twice in a row will result in 0 score.
+    - For number 1 and 3 I am assuming that it is one or both dices that result in their respective conditions
     - For number 2, if a non-number or negative number is inputed, it will be defaultly set to 100.
 */
 
 // Set Variables
-var scores, roundScore, activePlayer, gamePlaying, prevRoll;
+var scores, roundScore, activePlayer, gamePlaying, prevRoll6;
 
 // Initialize
 init();
 
-
-// DOM Manipulation
-document.querySelector('#current-' + activePlayer).textContent = 0; // set roll to current score of current player
-// document.querySelector('#current-' + activePlayer).innerHTML = '<em>' + dice + '</em>'; // Same as ^ but "emphasized/italicized"
-document.querySelector('.dice').style.display = 'none';
-
-
 // Events and Event Handling
 // Event Listener for Roll Button
 document.querySelector('.btn-roll').addEventListener('click', function(){
-    var diceSelect = document.querySelector('.dice');
+    var diceSelect = document.getElementById('dice-1');
+    var diceSelect2 = document.getElementById('dice-2');
 
     if (gamePlaying) {
         // Roll Dice
         var dice = Math.floor(Math.random() * 6) + 1; // to get a dice number between 1 and 6
+        var dice2 = Math.floor(Math.random() * 6) + 1;
 
         // Change Display
         diceSelect.style.display = 'block'; // change the display
         diceSelect.src = 'dice-' + dice + '.png'; // Change dice pic according to dice roll
+        diceSelect2.style.display = 'block'; // change the display
+        diceSelect2.src = 'dice-' + dice2 + '.png'; // Change dice pic according to dice roll
 
         // Update score if the dice is not a 1
-        if (dice === 6 && prevRoll === 6) { // Rolled 6 twice in a row
+        if ((dice === 6 || dice2 === 6) && prevRoll6 === 6) { // Rolled one 6 twice in a row
             scores[activePlayer] = 0; // Reset to 0
             document.getElementById('score-' + activePlayer).textContent = '0'; // change display
             nextPlayer();
-        } else if (dice !== 1){
-            prevRoll = dice;
-            roundScore += dice;
+        } else if (dice !== 1 && dice2 !== 1) {
+            if (dice === 6 || dice2 === 6) { // Condition for rolling a 6
+                prevRoll6 = 6;
+            } else {
+                prevRoll6 = 0;
+            }
+            roundScore += dice + dice2;
             document.querySelector('#current-' + activePlayer).textContent = roundScore;
         } else { // rolled a 1
             // Goes to next player
@@ -144,8 +144,18 @@ document.querySelector('.btn-hold').addEventListener('click', function(){
         // Update the UI
         document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
 
+        // Set final score based on input
+        var finalScore = document.querySelector('.final-score').value;
+
+        // Check if it's an appropriate value
+        if (finalScore > 0) {
+            // nothing
+        } else {
+            finalScore = 100; // Default score
+        }
+
         // Check if the player won the game
-        if (scores[activePlayer] >= 100) {
+        if (scores[activePlayer] >= finalScore) {
             // Change player display to winner
             document.querySelector('#name-' + activePlayer).textContent = 'Winner!'
 
@@ -171,7 +181,7 @@ function nextPlayer(){
 
     // Reset
     roundScore = 0;
-    prevRoll = 0;
+    prevRoll6 = 0;
 
     // Reset current score displayer
     document.getElementById('current-0').textContent = '0';
@@ -180,7 +190,10 @@ function nextPlayer(){
     // Change active player
     document.querySelector('.player-0-panel').classList.toggle('active');
     document.querySelector('.player-1-panel').classList.toggle('active');
-    document.querySelector('.dice').style.display = 'none'; // Remove dice display
+
+    // Remove dice display
+    document.getElementById('dice-1').style.display = 'none';
+    document.getElementById('dice-2').style.display = 'none';
 };
 
 function init(){
@@ -188,13 +201,11 @@ function init(){
     roundScore = 0;
     activePlayer = 0;
     gamePlaying = true;
-    prevRoll = 0;
-
-    // Set score goal
-    var goal = prompt("Set the Goal: ")
+    prevRoll6 = 0;
 
     // Set start dice display to none
-    document.querySelector('.dice').style.display = 'none';
+    document.getElementById('dice-1').style.display = 'none';
+    document.getElementById('dice-2').style.display = 'none';
 
     // Set all scores to 0
     document.getElementById('score-0').textContent = '0';
