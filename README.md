@@ -2,7 +2,7 @@
 
 ### Disclaimer:
 
-This repo contains the files that I am using for my Udemy JavaScript course. Note that the only files I will be manipulating are the files in the 'starter' folder of each section. These will show my progress in this course as well as samples of my code in JavaScript.
+This repo contains the files that I am using for my Udemy JavaScript course. Note that the only files I will be manipulating are the files in the 'starter' folder of each section. These will show my progress in this course as well as samples of my code in JavaScript. I will be deleting 'final' folders as a I progress in order to make space on my local computer.
 
 Also note that I am not simply copying the instructor's videos. Code written throughout the lessons act as notes as well as a big unary code that covers each subsection. I like my notes to explain things in detail even if I already know the information. Many of these concepts, I have already learned through other courses but I will still work through them as if I am learning them for the first time.
 
@@ -27,8 +27,8 @@ Some of the information in this section were very similar to other languages I'v
 
 ###### After finishing section 4:
 
-I liked that we were given a decent sized project as our first project and I also liked that the teacher walked us through the work since it was our first big project and taught us many things like events and event listeners while doing the project. I enjoyed it and it was a nice simple project that taught me how to integrate something on the web in a real world situation, which I find lacking in some of my non-online courses. My only complaint was that for the challenge 2 and 3, the teacher assumed that we knew how to manipulate the HTML and CSS code. I didn't have much trouble aside from that.  
-  
+I liked that we were given a decent sized project as our first project and I also liked that the teacher walked us through the work since it was our first big project and taught us many things like events and event listeners while doing the project. I enjoyed it and it was a nice simple project that taught me how to integrate something on the web in a real world situation, which I find lacking in some of my non-online courses. I do hope that the next projects are more self-driven though. My only complaint was that for the challenge 2 and 3, the teacher assumed that we knew how to manipulate the HTML and CSS code. I didn't have much trouble aside from that.  
+
 
 
 Below contains the original information for this ReadMe from my Udemy course professor.
