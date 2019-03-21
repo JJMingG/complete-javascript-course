@@ -49,9 +49,9 @@ john.calculateAge();
 jane.calculateAge();
 mark.calculateAge();
 
-console.log(john.name + john.lastName);
-console.log(jane.name + jane.lastName);
-console.log(mark.name + mark.lastName);
+console.log(john.name + " " + john.lastName);
+console.log(jane.name + " " + jane.lastName);
+console.log(mark.name + " " + mark.lastName);
 
 
 
@@ -60,6 +60,7 @@ console.log(mark.name + mark.lastName);
 */
 
 // to check property
+console.log("\nChecking property");
 console.log(john.hasOwnProperty('job')); // true
 console.log(john.hasOwnProperty('lastName')); // returns false because lastName is a property of the prototype
 console.log(john instanceof Person); // instanceof is an operator
@@ -77,7 +78,7 @@ var personProto = {
     }
 };
 
-var james - Object.create(personProto);
+var james = Object.create(personProto);
 james.name = 'James';
 james.yearOfBirth = 1991;
 james.job = 'teacher';
